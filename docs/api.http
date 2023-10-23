@@ -1,0 +1,26 @@
+### try get first
+
+GET localhost:8080/api/v1/demo-controller
+Authorization:Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbWV2aWRlQGdtYWlsLmNvbSIsImlhdCI6MTY5ODA1NTczNiwiZXhwIjoxNjk4MDU3MTc2fQ.DewNW2k2EO0Tp9n0SvlPNS3ohuw0l493cMe_448m9M8
+
+
+### try register
+
+POST localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstname": "ame",
+  "lastname": "vide",
+  "email": "amevide@gmail.com",
+  "password": "password"
+}
+
+### try authenticate
+POST localhost:8080/api/v1/auth/authenticate
+Content-Type: application/json
+
+{
+  "email": "amevide@gmail.com",
+  "password": "password"
+}
